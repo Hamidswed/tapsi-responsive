@@ -1,0 +1,248 @@
+/* Reset Styles */
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+/* root variable */
+:root{
+  --color-primary:#ff5722;
+  --color-primary-light:#ff7a50;
+  --color-secondary-light:#fff6f2;
+  --color-secondary-dark:#ffa589;
+  --color-navbar:#f8f8f8;
+  --color-heading:#000000;
+  --color-body:#333333;
+  --color-white:#ffffff;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
+
+h1,h2,h3{
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width:1024px) {
+  body{
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+}
+
+/* buttons */
+.btn{
+  outline: 0;
+  border: 0;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.btn--primary{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--secondary{
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+
+.btn--block{
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+  .btn{
+    font-size: 1.8rem;
+  }
+  .btn--block{
+    font-size: 2rem;
+  }
+}
+
+/* Badge */
+.badge{
+  display: inline-block;
+  padding: .5rem 1.3rem;
+  border-radius: 32px;
+  text-transform: uppercase;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+.badge--primary{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+@media screen and (min-width:1024px) {
+  .badge{
+    font-size: 1.4rem;
+  }
+}
+
+/* List */
+.list{
+  list-style: none;
+  font-size: 1.6rem;
+}
+.list--inline .list__item{
+  display: inline-block;
+  margin-left: 2rem;
+}
+.list--tick .list__item::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/Tick\ Square\ -\ 1.svg") no-repeat;
+  padding-right: 2.5rem;
+  margin-left: .5rem;
+}
+.list--tick .list__item{
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width:1024px) {
+  .list--tick .list__item{
+    font-size: 1.8rem;
+  }
+}
+
+/* Plan */
+.block-plan{
+  display: grid;
+  gap: 8rem 5rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit,minmax(250px,350px));
+  margin: 5rem 3rem;
+}
+.plan{
+  max-width: 450px;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-in;
+}
+.plan:hover{
+  transform: scale(1.05);
+}
+.plan__introduction{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.plan__price{
+  font-size: 3rem;
+}
+.plan__billing-cycle{
+  font-size: 1.4rem;
+}
+.plan__description{
+  display: block;
+  margin-top: 1.5rem;
+}
+.plan .btn--block{
+  margin-top: 6rem;
+}
+.plan--popular{
+  transform: scale(1.1);
+}
+.plan--popular:hover{
+  transform: scale(1.15);
+}
+@media screen and (min-width:1024px) {
+  
+  .plan .btn--block{
+    font-size: 1.8rem;
+  }
+}
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 1.8rem;
+  box-shadow: 0 0 20px 10px #e9e4e4;
+}
+.card--primary .card__header{
+  background-color: var(--color-primary-light);
+}
+.card--secondary .card__header{
+  background-color: var(--color-secondary-dark);
+}
+.card__header, .card__body{
+  padding: 3rem 2.5rem;
+}
+.card__header{
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+
+/* Container */
+.container{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* Feature */
+.feature{
+  display: grid;
+}
+.feature__text{
+  margin-bottom: 2rem;
+}
+.feature__image{
+  display: flex;
+  justify-content: center;
+}
+.feature__image > img{
+  width: 70%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.feature .btn{
+  padding: 1.2rem 3rem;
+}
+@media screen and (min-width:1024px) {
+  .feature{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature__image{
+    order: 2;
+    margin-bottom: 0;
+  }
+  .feature__detail{
+    order: 1;
+  }
+  .feature__image > img{
+    width: 80%;
+  }
+}
