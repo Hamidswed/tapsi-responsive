@@ -16,68 +16,160 @@
     <title>Tapsi Demo</title>
   </head>
   <body>
-    <section class="hero-section">
-      <picture>
-        <source
-          srcset="./assets/images/banner/banner.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./assets/images/banner/banner.jpg"
-          type="image/jpg"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./assets/images/banner/banner-mobile.webp"
-          type="image/webp"
-          media="(max-width: 768px)"
-        />
-        <source
-          srcset="./assets/images/banner/banner-mobile.jpg"
-          type="image/jpg"
-          media="(max-width: 768px)"
-        />
-        <img
-          alt="banner"
-          src="./assets/images/banner/banner.jpg"
-          class="banner-img"
-        />
-      </picture>
-      <section class="hero-wrapper container">
-        <div class="intro-btn">
-          <div>
-            <h1>تپسی</h1>
-            <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+    <section class="services container">
+      <h2 class="services__title">سرویس های تپسی</h2>
+      <nav class="services__tabs">
+        <a class="tab" data-tab-target="nav-classic-tab">
+          <img
+            src="./assets/images/services/cc-classic.png"
+            aria-label="classic service icon"
+            alt="tapsi-classic-icon"
+          />
+          <p>تپسی کلاسیک</p>
+        </a>
+        <a class="tab" data-tab-target="nav-tel-tab">
+          <img
+            src="./assets/images/services/cc-tel.png"
+            aria-label="tel service icon"
+            alt="tapsi-tel-icon"
+          />
+          <p>تپسی تلفنی</p>
+        </a>
+        <a class="tab" data-tab-target="nav-line-tab">
+          <img
+            src="./assets/images/services/cc-line.png"
+            aria-label="line service icon"
+            alt="tapsi-line-icon"
+          />
+          <p>تپسی لاین</p>
+        </a>
+        <a class="tab" data-tab-target="nav-motopeyk-tab">
+          <img
+            src="./assets/images/services/cc-motopeyk.png"
+            aria-label="motopeyk service icon"
+            alt="motopeyk-icon"
+          />
+          <p>موتوپیک</p>
+        </a>
+        <a class="tab" data-tab-target="nav-autopeyk-tab">
+          <img
+            src="./assets/images/services/cc-autopeyk.png"
+            aria-label="autopeyk service icon"
+            alt="autopeyk-icon"
+          />
+          <p>اتوپیک</p>
+        </a>
+        <a class="tab" data-tab-target="nav-plus-tab">
+          <img
+            src="./assets/images/services/cc-plus.png"
+            aria-label="plus service icon"
+            alt="tapsi-plus-icon"
+          />
+          <p>تپسی پلاس</p>
+        </a>
+        <a class="tab" data-tab-target="nav-hamyar-tab">
+          <img
+            src="./assets/images/services/cc-hamyar.png"
+            aria-label="hamyar service icon"
+            alt="hamyar-icon"
+          />
+          <p>همیار</p>
+        </a>
+      </nav>
+      <div class="container">
+        <div class="tab-content active" id="nav-classic-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-classic.png" alt="imac" />
           </div>
-          <div class="intro-wrapper">
-            <div class="intro-btn__passanger">
-              <span>
-                <i class="fa-solid fa-arrow-down"></i>
-              </span>
-              <p>دانلود اپلیکیشن مسافران</p>
-            </div>
-            <div class="intro-btn__passanger">
-              <span>
-                <i class="fa-solid fa-earth-americas"></i>
-              </span>
-              <p>وب اپلیکیشن مسافران</p>
-            </div>
-            <div class="intro-btn__passanger intro-btn__driver">
-              <span>
-                <i class="fa-solid fa-arrow-down"></i>
-              </span>
-              <p>دانلود اپلیکیشن رانندگان</p>
-            </div>
-            <div class="intro-btn__passanger intro-btn__driver">
-              <span>
-                <i class="fa-solid fa-earth-americas"></i>
-              </span>
-              <p>وب اپلیکیشن رانندگان</p>
-            </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
           </div>
         </div>
-      </section>
+        <div class="tab-content" id="nav-tel-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-tel.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-line-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-line.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-motopeyk-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-motopeyk.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-autopeyk-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-autopeyk.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-plus-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-plus.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-hamyar-tab">
+          <div class="feature__image">
+            <img src="./assets/images/services/cc-hamyar.png" alt="imac" />
+          </div>
+          <div class="feature__detail">
+            <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+              پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست
+              همزمان تعداد نامحدودی خودرو و پیک را برای کسب و کارها و سازمانها
+              فراهم میکند
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
