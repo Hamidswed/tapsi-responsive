@@ -742,15 +742,25 @@ textarea{
   width: 100%;
 }
 
+.tab-content .feature__image{
+  display: none;
+  justify-content: flex-end;
+}
+
 .tab-content{
   display: none;
 }
 
 .tab-content.active{
   display: flex;
+  justify-content: space-between;
 }
 
-.tab.active{
+.tab{
+  cursor: pointer;
+}
+
+.tab.active img{
   opacity: 1;
 }
 
@@ -766,13 +776,13 @@ textarea{
     margin-bottom: 30px;
   }
   .services .feature__image{
-    display: block;
+    display: flex;
   }
   .services .feature{
     padding: 0;
   }
   .feature__detail{
-    width: 50%;
+    width: 70%;
   }
 }
 
