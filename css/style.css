@@ -248,8 +248,9 @@ h2{
     order: 2;
     margin-bottom: 0;
   }
-  .feature__detail{
+  .feature .feature__detail{
     order: 1;
+    min-width: 100%;
   }
   .feature__image > img{
     width: 80%;
