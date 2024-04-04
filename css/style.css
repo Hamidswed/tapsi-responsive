@@ -220,6 +220,7 @@ h2{
 .feature{
   display: grid;
   gap: 2rem 15rem;
+  overflow-x: hidden;
 }
 .feature__text{
   margin-bottom: 2rem;
@@ -366,7 +367,7 @@ h2{
 .form-wrapper{
   height: 100%;
   border: 1px solid #ccc;
-  padding: 5.2rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .06);
 }
@@ -410,6 +411,9 @@ textarea{
 @media screen and (min-width:1024px) {
   .contact-us__form{
     margin-right: 3rem;
+  }
+  .form-wrapper{
+    padding: 3rem;
   }
   
 }
@@ -604,7 +608,8 @@ textarea{
 
 .hero-section .banner-img{
   width: 100%;
-  height: auto;
+  height: 478px;
+  object-fit: cover;
 }
 
 .hero-wrapper{
@@ -784,7 +789,7 @@ textarea{
 }
 
 .block{
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 .block-heading{
   margin-top: 0;
@@ -818,3 +823,72 @@ textarea{
   }
 }
 
+/* Travel Slides */
+
+.travel__slides{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.travel__slides::-webkit-scrollbar{
+  display: none;
+}
+
+.travel__slide{
+  flex:0 0 280px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide__img{
+  height: 200px;
+}
+
+.travel__slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.slide__header{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center ;
+  gap: 1rem;
+}
+
+.slide__header p{
+  font-size: 1.2rem;
+}
+
+.slide__header .badge{
+  font-size: 1.2rem;
+  padding: .1rem 1.2rem;
+}
+.slide__detial{
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+  border-radius: 32px;
+  padding: 1rem 1.5rem;
+  transform: translateY(-60px);
+  width: 85%;
+}
+
+.slide__title{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.slide__icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cacaca;
+  margin-top: 1rem;
+}

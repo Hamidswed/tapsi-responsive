@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Tapsi Demo</title>
   </head>
   <body>
@@ -121,7 +122,7 @@
         </div>
       </section>
     </section>
-    <section class="services container block">
+    <section class="services container block" data-aos="fade-up">
       <h2 class="services__title block-heading">سرویس های تپسی</h2>
       <nav class="services__tabs">
         <a class="tab active" data-tab-target="nav-classic-tab">
@@ -292,10 +293,10 @@
     </section>
     <section class="feature-items">
       <div class="feature container block">
-        <div class="feature__image">
+        <div class="feature__image" data-aos="fade-right">
           <img src="./assets/images/imac1.png" alt="imac" />
         </div>
-        <div class="feature__detail">
+        <div class="feature__detail" data-aos="fade-left">
           <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
           <p class="feature__text">
             پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست همزمان
@@ -305,10 +306,10 @@
         </div>
       </div>
       <div class="feature container block change">
-        <div class="feature__image">
+        <div class="feature__image" data-aos="fade-left">
           <img src="./assets/images/imac1.png" alt="imac" />
         </div>
-        <div class="feature__detail">
+        <div class="feature__detail" data-aos="fade-right">
           <h2 class="feathre__title">خدمات تپسی برای کسب و کارها</h2>
           <p class="feature__text">
             پنل سازمانی تپسی یک سامانه تحت وب است که بسادگی امکان درخواست همزمان
@@ -320,7 +321,7 @@
     </section>
     <section class="block-plan container">
       <div class="plan">
-        <div class="card card--secondary">
+        <div class="card card--secondary" data-aos="flip-left">
           <header class="card__header">
             <span class="plan__introduction">
               <span class="plan__name">عادی</span>
@@ -341,7 +342,7 @@
           </div>
         </div>
       </div>
-      <div class="plan plan--popular">
+      <div class="plan plan--popular" data-aos="flip-up">
         <div class="card card--primary">
           <header class="card__header">
             <span class="plan__introduction">
@@ -364,7 +365,7 @@
         </div>
       </div>
       <div class="plan">
-        <div class="card card--secondary">
+        <div class="card card--secondary" data-aos="flip-right">
           <header class="card__header">
             <span class="plan__introduction">
               <span class="plan__name">ویژه</span>
@@ -387,7 +388,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-us container block">
+    <section class="contact-us container block" data-aos="zoom-in">
       <div class="contact-us__social">
         <span class="icon-container">
           <svg class="icon">
@@ -516,6 +517,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
