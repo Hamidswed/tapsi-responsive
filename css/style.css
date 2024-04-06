@@ -892,3 +892,57 @@ textarea{
   color: #cacaca;
   margin-top: 1rem;
 }
+
+/* Drop Down Menu */
+
+
+.accordion__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ececec;
+  cursor: pointer;
+  padding: 2rem;
+}
+.accordion__heading{
+  margin-bottom: 0;
+}
+
+.accordion__content{
+  border-radius: 5px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.accordion__expanded .accordion__content{
+  max-height: 100vh;
+  opacity: 1;
+  padding: 1rem 4rem;
+}
+
+.accordion__header i{
+  color: var(--color-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion__expanded .accordion__header i{
+  transform: rotate(-90deg);
+}
+
+.accordion__wrapper{
+  background-color: #fff;
+  border: 2px solid #ececec;
+  border-radius: 20px;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, .05);
+}
+
+.accordion__intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid #ececec;
+  color: var(--color-primary);
+}
