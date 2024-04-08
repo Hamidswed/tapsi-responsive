@@ -986,3 +986,54 @@ textarea{
   margin-right: 4px;
   display: inline-block;
 }
+
+/* Radio butten Section */
+
+.select-type{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.select-control{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  flex-grow: 1;
+}
+.select-control input[type="radio"]{
+  display: none;
+}
+.select-control label{
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  border: 2px solid #ccc;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: #444;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.select-control label::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 2px #ccc;
+  border-radius: 100%;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  transition: all .2s ease-in-out;
+}
+.select-control input[type="radio"]:checked + label{
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.select-control input[type="radio"]:checked + label::before{
+  box-shadow: 0 0 0 2px var(--color-primary);
+  background-color: var(--color-primary);
+}
