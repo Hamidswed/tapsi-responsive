@@ -18,6 +18,7 @@
   --color-heading:#000000;
   --color-body:#333333;
   --color-white:#ffffff;
+  --avatar-size:50px;
 }
 
 html{
@@ -945,4 +946,43 @@ textarea{
   padding: 2rem;
   border-bottom: 2px solid #ececec;
   color: var(--color-primary);
+}
+
+/* Avatar Section */
+
+.avatar-group{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  margin-left: -2.5rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+.avatar:hover:not(:last-of-type){
+  transform: translateX(10px);
+}
+.avatar img{
+  border: 3px solid #fff;
+}
+.hidden-avatars{
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  background-color:tomato;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+.slide__suggest{
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-right: 4px;
+  display: inline-block;
 }
